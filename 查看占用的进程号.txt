@@ -1,0 +1,11 @@
+查看占用8080端口的pid:
+sudo netstat -tlnp | grep 8080
+
+杀死pid
+sudo kill -9 端口对应的进程号
+
+再次查看,是否未占用
+sudo netstat -tlnp | grep 8080
+
+重启前端服务器
+live-server  启用8080端口
